@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="foca.png" type="image/x-icon">
+        <title>Pergunte à Foca</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Pergunte à Foca</h1>
+        </header>
+        <main>
+            <img src="foca.png" alt="foca"> 
+            <div>
+                <input type="text" class="input1"> 
+                <span>OU</span> 
+                <input type="text" class="input2">
+            </div>
+            <button type="button" onclick="escolhaAleatoria()"> Perguntar </button>
+        </main>
+    </body>
+
+    <script>
+        function escolhaAleatoria(){
+            var escolha = Math.floor(Math.random() * 10);
+
+            if (escolha%2)
+                alert("A foca escolheu "+document.querySelector(".input1").value)
+            else
+                alert("A foca escolheu "+document.querySelector(".input2").value)
+        }
+    </script>
+</html>

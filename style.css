@@ -1,0 +1,76 @@
+body{
+    font-size: 18px;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    color: rgb(9, 16, 16);
+    font-weight: bold;
+    text-align: center;
+    background-color: #941994c5;
+}
+
+header {
+    background: #742cbd;
+    padding: 25px 0;
+    font-size: 30px;
+    color: azure;
+    font-style: normal;  
+}
+
+main {
+    box-sizing: border-box;
+    border-color: rgb(12, 59, 87);
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 15px;
+    position: relative;
+    width: 720px;
+    margin: 40px auto;
+    padding: 50px 50px;
+    text-align: center;
+    height: auto;
+}
+
+img{
+    width: 60%;
+    margin: 30px;
+}
+
+input{
+    border-radius: 6px;
+    border: 1px, solid, black;
+    text-align: center;
+    font-size: 15px;
+}
+
+span{
+    margin: 0 5px;
+}
+
+button{
+    background: rgb(85, 30, 85);
+    color: rgb(249, 239, 255);
+    border: none;
+    border-radius: 5px;
+    margin: 15px 0 0;
+    width: 150px;
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #370444;
+    transition: 0.3s all;
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+
+@media screen and (max-width: 780px){
+    main{
+        width: auto;
+        margin: 40px 20px;
+    }
+    span{
+        display: block;
+        margin: 10px 0  5px 0;
+    }
+}
